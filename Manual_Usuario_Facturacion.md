@@ -22,7 +22,7 @@
 
 ---
 
-## Introducción
+# 1. Introducción
 
 Este manual está diseñado para guiar a los usuarios en la correcta utilización del sistema de facturación de ENBLAU. Aquí encontrarás instrucciones detalladas para gestionar presupuestos, pedidos, facturas y pagos de manera eficiente.
 
