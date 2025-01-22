@@ -75,7 +75,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ![articulos](Imagenes/Sistema_Control/articulos.jpg)
 
-  - **Artículos importados**: Son los materiales importados de los proyectos de **Logikal**. Son los mismos materiales que están también en **Almacén Materiales importados**.
+  - **Artículos importados**: Son los materiales importados de los proyectos de **Logikal**. Son los mismos materiales que están también en Almacén **Materiales importados**.
 
   ![articulos_importados](Imagenes/Sistema_Control/articulos_importados.jpg)
 
@@ -249,11 +249,11 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
     ![varios](Imagenes/Sistema_Control/varios.jpg)
 
-    - No descontar  No se descuenta de ningún sitio.
-    - Descontar del proyecto  Se descuenta solo del proyecto.
-    - Descontar de la zona, en su defecto del proyecto  Se descuenta de la zona indicada y del proyecto.
-    - Descontar de la zona  Solo se descuenta de la Zona indicada.
-    - Descontar del proyecto, en su defecto de cualquier zona  Se descuenta del proyecto y de cualquier zona que tenga ese material.
+    - **No descontar**: No se descuenta de ningún sitio.
+    - **Descontar del proyecto**: Se descuenta solo del proyecto.
+    - **Descontar de la zona, en su defecto del proyecto**: Se descuenta de la zona indicada y del proyecto.
+    - **Descontar de la zona**: Solo se descuenta de la Zona indicada.
+    - **Descontar del proyecto, en su defecto de cualquier zona**: Se descuenta del proyecto y de cualquier zona que tenga ese material.
    
 ---
 
