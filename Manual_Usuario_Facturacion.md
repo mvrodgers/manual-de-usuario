@@ -1,6 +1,6 @@
 # Manual de Usuario para Facturación en ENBLAU
 
-## Índice 
+## Índice  
 
 1. [Introducción](#introduccion)
 2. [Configuración Inicial](#configuracion-inicial)
