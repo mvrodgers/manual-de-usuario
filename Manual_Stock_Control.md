@@ -47,25 +47,25 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 - Confirma en **Pedir material** y envía el pedido al proveedor correspondiente.
 
 
-![material_necesario](../manual-de-usuario/Imagenes/Sistema_Control/material_necesario.jpg)
+![material_necesario](Imagenes/Sistema_Control/material_necesario.jpg)
 
 
 
 > **¡Importante!** Para hacer el pedido de materiales en el documento de venta, se requieren permisos especiales para realizar compras. Este permiso también es necesario para fabricar o instalar.
 
-![permiso_especiales](../manual-de-usuario/Imagenes/Sistema_Control/permisos_especiales.jpg)
+![permiso_especiales](Imagenes/Sistema_Control/permisos_especiales.jpg)
 
 ### 3.2. Materiales Reservados
 
 - Desde un documento de **Ventas**, **Compras** y en **Proyectos**, se pueden reservar materiales para el proyecto, indicando en **Materiales reservados** desde el desplegable de **Almacén**.
 
-![material_reservado](../manual-de-usuario/Imagenes/Sistema_Control/material_reservado.jpg)
+![material_reservado](Imagenes/Sistema_Control/material_reservado.jpg)
 
-![material_reservado](../manual-de-usuario/Imagenes/Sistema_Control/material_reservado_2.jpg)
+![material_reservado](Imagenes/Sistema_Control/material_reservado_2.jpg)
 
 - En **Compras** hay una opción más en el desplegable de almacén llamada **Reposición de stock**.
 
-![reposicion_stock](../manual-de-usuario/Imagenes/Sistema_Control/reposicion_stock.jpg)
+![reposicion_stock](Imagenes/Sistema_Control/reposicion_stock.jpg)
 
 
 ### 3.3. Artículos Importados
@@ -73,11 +73,11 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 - En el pedido de compras, en la pestaña **Detalle** en la cinta lateral derecha, verás que hay una sección ubicada en la parte inferior llamada **Artículos** y **Artículos importados**.
   - **Artículos**: Son materiales propios creados desde en **MATERIAL**.
 
-![articulos](../manual-de-usuario/Imagenes/Sistema_Control/articulos.jpg)
+![articulos](Imagenes/Sistema_Control/articulos.jpg)
 
   - **Artículos importados**: Son los materiales importados de los proyectos de **Logikal**. Son los mismos materiales que están también en **Almacén Materiales importados**.
 
-  ![articulos_importados](../manual-de-usuario/Imagenes/Sistema_Control/articulos_importados.jpg)
+  ![articulos_importados](Imagenes/Sistema_Control/articulos_importados.jpg)
 
 ---
 
@@ -85,32 +85,32 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 - En **Almacenes**, acceda a la opción **"Pendientes de Recibir"**. Se abrirá una pestaña con todos los materiales pendientes de recibir para cada proyecto.
 
-![pendientes_recibir](../manual-de-usuario/Imagenes/Sistema_Control/pendiente_recibir.jpg)
-![pendientes_recibir](../manual-de-usuario/Imagenes/Sistema_Control/pendiente_recibir2.jpg)
+![pendientes_recibir](Imagenes/Sistema_Control/pendiente_recibir.jpg)
+![pendientes_recibir](Imagenes/Sistema_Control/pendiente_recibir2.jpg)
 
 - **Modo de recibir**: Se puede hacer desde ENBLAU, pero se recomienda hacerlo desde la app **enSite** en taller.
 - Abra **enSite** desde el taller a través de Wi-Fi con la persona encargada de recibir el pedido.
 - En **Recepción de pedidos**, localice el pedido correspondiente (ordenado por fecha).
 
-![recepcion_pedido](../manual-de-usuario/Imagenes/Sistema_Control/recepcion_pedido.jpg)
-![recepcion_pedido](../manual-de-usuario/Imagenes/Sistema_Control/recepcion_pedido2.jpg)
+![recepcion_pedido](Imagenes/Sistema_Control/recepcion_pedido.jpg)
+![recepcion_pedido](Imagenes/Sistema_Control/recepcion_pedido2.jpg)
 
 - Registre la recepción en **Nuevo Albarán** creando un albarán desde la sección **Almacén**.
 
-![albaran](../manual-de-usuario/Imagenes/Sistema_Control/albaran.jpg)
-![albaran](../manual-de-usuario/Imagenes/Sistema_Control/albaran2.jpg)
+![albaran](Imagenes/Sistema_Control/albaran.jpg)
+![albaran](Imagenes/Sistema_Control/albaran2.jpg)
 
 - En ENBLAU, la pestaña **Pendiente de recibir** de **Almacenes** se sincroniza y ya no verás los materiales para ese pedido.
 - En **Pedido de Compras**, puedes comprobar la trazabilidad.
 - En **enSite**, indique las cantidades recibidas y la ubicación donde se almacenarán (Almacén, Planta, Zona, Subzona…). Luego podrás ver la ubicación de cada material.
 
-![ubicacion](../manual-de-usuario/Imagenes/Sistema_Control/ubicacion.jpg)
-![ubicacion](../manual-de-usuario/Imagenes/Sistema_Control/ubicacion2.jpg)
+![ubicacion](Imagenes/Sistema_Control/ubicacion.jpg)
+![ubicacion](Imagenes/Sistema_Control/ubicacion2.jpg)
 
 > **En caso de materiales dañados u otras incidencias**, puedes adjuntar documentos o capturar fotografías y adjuntarlas al albarán. Luego se podrá revisar desde ENBLAU.
 
-![adjuntos](../manual-de-usuario/Imagenes/Sistema_Control/adjuntos.jpg)
-![adjuntos](../manual-de-usuario/Imagenes/Sistema_Control/adjuntos2.jpg)
+![adjuntos](Imagenes/Sistema_Control/adjuntos.jpg)
+![adjuntos](Imagenes/Sistema_Control/adjuntos2.jpg)
 
 ---
 
@@ -120,43 +120,43 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 - En el menú principal de **Almacenes**, puedes añadir o editar los almacenes.
 
-![almacenes](../manual-de-usuario/Imagenes/Sistema_Control/almacen.jpg)
+![almacenes](Imagenes/Sistema_Control/almacen.jpg)
 
 - Configura el layout del almacén desde la página inicial: **ENBLAU** – **Configuración** – **Almacén** – **Layout**:
 
-![almacen_layout](../manual-de-usuario/Imagenes/Sistema_Control/almacen_layout.jpg)
+![almacen_layout](Imagenes/Sistema_Control/almacen_layout.jpg)
 
   - Crea zonas, estanterías y posiciones en el sistema para una organización clara. Se mostrará como vista de árbol.
   - Relaciona cada posición con su correspondiente área de almacenamiento. Ejemplo:
     - **Añadir Planta**: Añade una planta y puedes indicar el almacén.
     - **Añadir Zona/SubZona**: Se añade una zona o subzona debajo de la ubicación seleccionada.
 
-    ![almacen_layout](../manual-de-usuario/Imagenes/Sistema_Control/almacen_layout2.jpg)
+    ![almacen_layout](Imagenes/Sistema_Control/almacen_layout2.jpg)
 
 ### 5.2. Movimientos en Almacén
 
 - Realiza movimientos de materiales entre zonas:
   - En **Almacenes** – **Detallado**, haz clic derecho sobre el material que quieras traspasar o descontar.
 
-  ![detallado](../manual-de-usuario/Imagenes/Sistema_Control/detallado.jpg)
+  ![detallado](Imagenes/Sistema_Control/detallado.jpg)
 
   - Selecciona el material desde el proyecto.
   - **Descontar**: Indica el Proyecto, número del pedido, responsable y cantidad/longitud.
 
-    ![movimiento](../manual-de-usuario/Imagenes/Sistema_Control/movimiento.jpg)
+    ![movimiento](Imagenes/Sistema_Control/movimiento.jpg)
 
   - **Traspaso**: Indica la ubicación de origen y destino.
 
-    ![traspaso](../manual-de-usuario/Imagenes/Sistema_Control/traspaso.jpg)
+    ![traspaso](Imagenes/Sistema_Control/traspaso.jpg)
 
 - Los movimientos de entrada y salida de cada material se reflejarán en el **Albarán**. Se puede ver las entradas y salidas en **Almacén – Movimientos**.
 
-    ![movimentos_almacen](../manual-de-usuario/Imagenes/Sistema_Control/movimentos_almacen.jpg)
+    ![movimentos_almacen](Imagenes/Sistema_Control/movimentos_almacen.jpg)
 
 - Desde la app **enSITE**, también se puede buscar por artículos y ver todas las ubicaciones donde está ese artículo. Para luego mover o descontar los articulos.
 
-    ![ver_ubicacion](../manual-de-usuario/Imagenes/Sistema_Control/ver_ubicacion.jpg)
-    ![mover_salida](../manual-de-usuario/Imagenes/Sistema_Control/mover_salida.jpg)
+    ![ver_ubicacion](Imagenes/Sistema_Control/ver_ubicacion.jpg)
+    ![mover_salida](Imagenes/Sistema_Control/mover_salida.jpg)
 
 ---
 
@@ -167,44 +167,44 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 - Crea proyectos de producción basados en los pedidos de cliente.
   - Crear producción.
 
-    ![crear_produccion](../manual-de-usuario/Imagenes/Sistema_Control/crear_produccion.jpg)
+    ![crear_produccion](Imagenes/Sistema_Control/crear_produccion.jpg)
 
   - El siguiente paso es **Enviar a producción**.
 
-    ![enviar_produccion](../manual-de-usuario/Imagenes/Sistema_Control/enviar_produccion.jpg)
+    ![enviar_produccion](Imagenes/Sistema_Control/enviar_produccion.jpg)
     
 
   - En producción, se puede ver en **stock necesario** los materiales descontados. Se puede descontar manualmente.
 
-    ![stock_necesario](../manual-de-usuario/Imagenes/Sistema_Control/stock_necesario.jpg)
-    ![stock_necesario](../manual-de-usuario/Imagenes/Sistema_Control/stock_necesario2.jpg)
+    ![stock_necesario](Imagenes/Sistema_Control/stock_necesario.jpg)
+    ![stock_necesario](Imagenes/Sistema_Control/stock_necesario2.jpg)
 
 ### 6.2. enCONTROL
 
 - Abre **enCONTROL**. Aparecen los proyectos de producción. Si eres usuario administrador, verás todos los proyectos, si no, solo verás los asignados.
 - Abre el **monitor de control**. Puedes abrirlo haciendo doble clic en cualquiera de los filtros (en la cabecera) o haciendo doble clic en el proyecto y seleccionando el puesto de **Control**.
 
-    ![puesto_control](../manual-de-usuario/Imagenes/Sistema_Control/puesto_control.jpg)
+    ![puesto_control](Imagenes/Sistema_Control/puesto_control.jpg)
 
 - Cuando se envía a producción (Taller), se coloca en cola de producción en la pestaña de **Gestión de Producción**. El responsable de producción decide la prioridad.
 
-    ![gestion_produccion](../manual-de-usuario/Imagenes/Sistema_Control/gestion_produccion.jpg)
+    ![gestion_produccion](Imagenes/Sistema_Control/gestion_produccion.jpg)
 
 - Para añadir, solo tienes que arrastrarlo y se abrirá una ventana de **Tarea** para proponer una fecha.
 
-    ![tarea](../manual-de-usuario/Imagenes/Sistema_Control/tarea.jpg)
+    ![tarea](Imagenes/Sistema_Control/tarea.jpg)
 
 - En la pestaña Planificación de producción defines a quien se asigna, arrastrando los proyectos a cada responsable por hacer. Hay que seleccionar el responsable y arrastrar el proyecto (se puede seleccionar más de uno responsable con ctrl + botón derecho). También se puede cambiar la prioridad  de izquierda a derecha y de arriba a abajo:
 
-  ![planificacion_produccion](../manual-de-usuario/Imagenes/Sistema_Control/planificacion_produccion.jpg)
+  ![planificacion_produccion](Imagenes/Sistema_Control/planificacion_produccion.jpg)
 
 - En la pestaña Calendario de producción en base a los tiempos de Logikal (en el ejemplo) fechas de entrada y salida de producción.
 
-  ![calendario_produccion](../manual-de-usuario/Imagenes/Sistema_Control/calendario_produccion.jpg)
+  ![calendario_produccion](Imagenes/Sistema_Control/calendario_produccion.jpg)
 
 - Optimice los procesos según las áreas de producción (corte, mecanizado, ensamblado, etc.). En la pantalla de proyecto con doble clic sobre el proyecto deseado, te abrirá una ventana Seleccione un puesto. (Los puestos se definen como el cliente decida y se verá según el usuario) ejemplos:
 
-  ![seleccion_puesto](../manual-de-usuario/Imagenes/Sistema_Control/seleccion_puesto.jpg)
+  ![seleccion_puesto](Imagenes/Sistema_Control/seleccion_puesto.jpg)
 
 - Preparación de Material
     - Todo preparado – Marca los materiales con un check en verde indicando que está preparado.
@@ -214,7 +214,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 	- Documentación - añadir una ruta genérica para añadir lo que quiera. Catálogo, manuales, etc...
 	- Comentarios - Se puede añadir comentario y escoger una severidad en el desplegable. El ultimo comentario bueno es el que desbloquea.
 
-      ![preparacion](../manual-de-usuario/Imagenes/Sistema_Control/preparacion.jpg)
+      ![preparacion](Imagenes/Sistema_Control/preparacion.jpg)
 
 > Todas las pantallas de Puesto son muy similares. Solo que algunas puede que se descuente materiales y otras es a nivel de información. 
 
@@ -242,12 +242,12 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 > Configuración enCONTROL (Usuario Adm)  Define algunas configuraciones por defecto y se añade nuevos Puestos:
 
-  ![config_encontrol](../manual-de-usuario/Imagenes/Sistema_Control/config_encontrol.jpg)
-  ![config_encontrol](../manual-de-usuario/Imagenes/Sistema_Control/config_encontrol2.jpg)
+  ![config_encontrol](Imagenes/Sistema_Control/config_encontrol.jpg)
+  ![config_encontrol](Imagenes/Sistema_Control/config_encontrol2.jpg)
 
 - En Varios Hay diferentes modos para descontar los materiales (Perfiles, Herrajes y Accesorios).
 
-    ![varios](../manual-de-usuario/Imagenes/Sistema_Control/varios.jpg)
+    ![varios](Imagenes/Sistema_Control/varios.jpg)
 
     - No descontar  No se descuenta de ningún sitio.
     - Descontar del proyecto  Se descuenta solo del proyecto.
