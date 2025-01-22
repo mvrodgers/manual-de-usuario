@@ -1,6 +1,6 @@
 # Manual de Usuario para Facturación en ENBLAU
 
-## Índice
+## Índice 
 
 1. [Introducción](#introduccion)
 2. [Configuración Inicial](#configuracion-inicial)
@@ -132,4 +132,3 @@ Asegúrate de que los datos de pago y cliente coincidan para evitar problemas co
 2. Asegúrate de que los pedidos estén completos y correctos antes de facturarlos.
 3. Consulta al equipo de soporte en caso de dudas.
 
-¡Listo! Ahora puedes gestionar la facturación de manera eficiente con Emblau.
