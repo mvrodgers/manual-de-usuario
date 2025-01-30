@@ -1,0 +1,11 @@
+/* Estilos para el índice */
+.toc {
+    position: fixed;
+    top: 100px;  /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+    width: 200px; /* Ajusta el ancho */
+    border: 1px solid #ddd;  /* Opcional, para agregar un borde */
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  

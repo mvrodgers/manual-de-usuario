@@ -1,0 +1,10 @@
+title: Manual del Usuario
+description: ""
+url: "https://mvrodgers.github.io/manual-de-usuario/"  # Cambia esto por tu URL real
+baseurl: ""
+theme: minima
+
+plugins:
+  - jekyll-toc
+
+  
