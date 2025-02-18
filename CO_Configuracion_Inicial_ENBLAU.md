@@ -7,33 +7,7 @@ has_children: true
 
 # Configuración Inicial de ENBLAU
 
-## Índice
-
-1. [Propósito](#1-propósito)
-2. [Configuración General](#2-configuración-general)
-   - [2.1. Configuración de Conexión con Logikal](#21-configuración-de-conexión-con-logikal)
-   - [2.2. General](#22-general)
-   - [2.3. Textos en Ventas](#23-textos-en-ventas)
-3. [Gestión de Usuarios](#3-gestión-de-usuarios)
-4. [Configuración de Cuentas de Email](#4-configuración-de-cuentas-de-email)
-5. [Gestión de Empresas](#5-gestión-de-empresas)
-6. [Configuración de Proyectos](#6-configuración-de-proyectos)
-   - [6.1. Estados](#61-estados)
-   - [6.2. Directorios por Defecto](#62-directorios-por-defecto)
-7. [Configuración de Ventas](#7-configuración-de-ventas)
-   - [7.1. Numeraciones](#71-numeraciones)
-   - [7.2. Formas de Pago](#72-formas-de-pago)
-   - [7.3. Bancos](#73-bancos)
-   - [7.4. Modos de Pago](#74-modos-de-pago)
-   - [7.5. Conceptos de Roturas](#75-conceptos-de-roturas)
-   - [7.6. Clasificaciones](#76-clasificaciones)
-   - [7.7. Sujetos Pasivos (IVA)](#77-sujetos-pasivos-iva)
-   - [7.8. Directorios por Defecto](#78-directorios-por-defecto)
-8. [Configuración de Compras](#8-configuración-de-compras)
-   - [8.1. Numeraciones](#81-numeraciones)
-   - [8.2. Formas de Pago](#82-formas-de-pago)
-   - [8.3. Clasificaciones](#83-clasificaciones)
-   - [8.4. Directorios por Defecto](#84-directorios-por-defecto)
+{:toc}
 
 ---
 
