@@ -1,3 +1,8 @@
+---
+title: Configuración Inicial de ENBLAU
+nav_order: 1
+---
+
 # Configuración Inicial de ENBLAU
 
 ## Índice
