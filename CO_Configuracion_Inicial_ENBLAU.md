@@ -1,6 +1,8 @@
 ---
-title: Configuración Inicial de ENBLAU
+title: "Configuración Inicial de ENBLAU"
+description: "Guía paso a paso para la configuración inicial de ENBLAU."
 nav_order: 1
+has_children: true
 ---
 
 # Configuración Inicial de ENBLAU

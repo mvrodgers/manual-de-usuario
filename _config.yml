@@ -1,12 +1,16 @@
+
 theme: just-the-docs
 title: Configuración Inicial de ENBLAU
 description: Guía para configurar ENBLAU paso a paso.
-nav_order: 1
+
+# Habilita la navegación lateral
+just_the_docs:
+  search_enabled: true
+  collections:
+    pages:
+      output: true
+      permalink: /:path/
 
 # Configuración del menú lateral
 aux_links:
   "Repositorio en GitHub": "https://mvrodgers.github.io/manual-de-usuario/CO_Configuracion_Inicial_ENBLAU.html"
-
-# Orden de navegación (opcional)
-nav_order: 1
-
