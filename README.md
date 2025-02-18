@@ -1,13 +1,28 @@
 # Manual de usuario
 
-[1. Configuracin Inicial de ENBLAU](Configuracion_Inicial_ENBLAU.md)
+## Configuración
 
-[2. Presupuesto y compras **(EN PROCESO)**](Presupuesto_Compras.md)
+[1. Configuración Inicial de ENBLAU](CO_Configuracion_Inicial_ENBLAU.md)
 
-[3. Facturación **(EN PROCESO)**](Facturacion.md)
+[2. Configuración Inicial de enCONTROL](CO_Configuracion_Inicial_enCONTROL.md)
 
-[4. Configuración layout almacén **(EN PROCESO)**](Configuracion_Layout_Almacen.md)
+[3. Configuración layout almacén **(EN PROCESO)**](EN_PROCESO.md)<!--(CO_Configuracion_Layout_Almacen.md)--> 
 
-[5. Creación de materiales proprios en enMATERIALES **(EN PROCESO)**](Manual_Stock_Control.md)
+[4. Configuración layout producción **(EN PROCESO)**](EN_PROCESO.md)<!--(CO_Configuracion_Layout_Produccion.md)--> 
 
-[6. Sistema de control de stock](Manual_Stock_Control.md)
+## Usabilidad y procesos
+
+[1. Presupuesto y compras **(EN PROCESO)**](EN_PROCESO.md)<!--(Presupuesto_Compras.md)-->
+
+[2. Facturación](UP_Facturas.md)
+
+[3. Creación de materiales proprios en enMATERIALES](UP_Crear_Materiales_enMATERIAL.md)
+
+[4. Sistema de control de stock](UP_Manual_Stock_Control.md)
+
+[5. Creación y edición de informes personalizados](UP_Editar_Informes.md)
+
+## Otros
+
+[1. Relación entre fases en ENBLAU y Logikal](OT_Relacion_ENBLAU_Logikal.md)
+
