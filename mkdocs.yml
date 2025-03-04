@@ -1,0 +1,9 @@
+site_name: Documentos
+
+theme:
+  name: readthedocs
+  logo: img/endades2.png
+  highlightjs: true
+
+extra_css:
+  - stylesheets/custom.css

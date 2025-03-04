@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. Creación y Edición de Informes Personalizados - Documentos</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. Creaci\u00f3n y Edici\u00f3n de Informes Personalizados";
+        var mkdocs_page_input_path = "Utilidades\\3.UT_Editar_Informes.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentos
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuraciones</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">1. Configuración Inicial de ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración Inicial de enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procesos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/1.PR_Ventas_Compras/">1. Ventas y Compras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/2.PR_Facturas/">2. Facturación</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/3.PR_Manual_Stock_Control/">3. Sistema de control de stock</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/4.PR_Proyecto_cliente/">4. Proyectos, Clientes y Proveedores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/5.PR_Informes/">5. Informes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales proprios en enMATERIALES</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Creación y Edición de Informes Personalizados</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-creacion-de-un-informe-personalizado">2. Creación de un Informe Personalizado</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_1"></a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-edicion-del-informe">3. Edición del Informe</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-eliminacion-de-elementos-adicionales">4. Eliminación de Elementos Adicionales</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-uso-de-la-nueva-plantilla">6. Uso de la nueva plantilla</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-consideraciones-finales">5. Consideraciones Finales</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentos</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Utilidades</li>
+      <li class="breadcrumb-item active">3. Creación y Edición de Informes Personalizados</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/mvrodgers/manual-de-usuario/edit/master/docs/Utilidades/3.UT_Editar_Informes.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="3-creacion-y-edicion-de-informes-personalizados">3. Creación y Edición de Informes Personalizados</h1>
+<!-- 1. [Introducción](#1-introducción)
+2. [Creación de un Informe Personalizado](#2-creación-de-un-informe-personalizado)
+3. [Edición del Informe](#3-edición-del-informe)
+4. [Eliminación de Elementos Adicionales](#4-eliminación-de-elementos-adicionales)
+5. [Consideraciones Finales](#5-consideraciones-finales) -->
+
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual tiene como objetivo guiar a los usuarios en la creación y modificación de nuevas plantillas de informes personalizados sin la necesidad de configurar una nueva plantilla. El proceso está diseñado para ser sencillo y evitar confusiones, permitiendo a los usuarios adaptar los informes a sus necesidades específicas de manera eficiente.</p>
+<hr />
+<h2 id="2-creacion-de-un-informe-personalizado">2. Creación de un Informe Personalizado</h2>
+<p>Para generar un informe basado en uno existente, sigue estos pasos:</p>
+<ol>
+<li>
+<p><strong>Ubicar el informe base</strong>:  </p>
+<ul>
+<li>Navega hasta el informe que deseas utilizar como base para tu nuevo informe personalizado.    </li>
+</ul>
+</li>
+<li>
+<p><strong>Crear una copia del informe</strong>:  </p>
+<ul>
+<li>Selecciona la opción para crear un nuevo informe a partir del existente. Esto generará una copia exacta del informe original, la cual podrás modificar sin afectar al informe base.</li>
+</ul>
+<p><img alt="Nuevo" src="../Imagenes/UT_Editar_Informes/nuevo.png" /></p>
+<h2 id="_1"><img alt="Nuevo informe" src="../Imagenes/UT_Editar_Informes/nuevo_informe.png" /></h2>
+</li>
+</ol>
+<h2 id="3-edicion-del-informe">3. Edición del Informe</h2>
+<p>Una vez que hayas creado la copia del informe, sigue estos pasos para personalizarlo:</p>
+<ol>
+<li>
+<p><strong>Ubicar el informe recién creado</strong>:  </p>
+<ul>
+<li>Accede al informe que acabas de copiar.</li>
+</ul>
+</li>
+<li>
+<p><strong>Acceder a la opción de edición</strong>:  </p>
+<ul>
+<li>Selecciona la opción de edición para comenzar a realizar cambios.</li>
+</ul>
+<p><img alt="Editar" src="../Imagenes/UT_Editar_Informes/editar.png" /></p>
+</li>
+<li>
+<p><strong>Realizar los cambios necesarios</strong>:  </p>
+<ul>
+<li>Modifica los campos, secciones o datos que requieras. Puedes agregar, eliminar o ajustar la información según tus necesidades. Puedes usar los recursos de edicion que tienes disponible para editar la plantilla:</li>
+</ul>
+<p><img alt="Editar informe" src="../Imagenes/UT_Editar_Informes/editar_informe.png" /></p>
+</li>
+<li>
+<p><strong>Guardar el informe</strong>:  </p>
+</li>
+<li>
+<p>Una vez realizados los cambios, guarda el documento para finalizar la edición.</p>
+<p><img alt="Guardar" src="../Imagenes/UT_Editar_Informes/guardar.png" /> </p>
+</li>
+</ol>
+<hr />
+<h2 id="4-eliminacion-de-elementos-adicionales">4. Eliminación de Elementos Adicionales</h2>
+<p>Si el informe requiere modificaciones más profundas, puedes eliminar secciones o datos innecesarios antes de guardar la versión final. Para ello:</p>
+<ol>
+<li><strong>Identificar elementos innecesarios</strong>:  </li>
+<li>
+<p>Revisa el informe y determina qué secciones o datos no son relevantes para tu propósito.</p>
+</li>
+<li>
+<p><strong>Eliminar elementos</strong>:  </p>
+</li>
+<li>
+<p>Utiliza la opción de eliminación para quitar los elementos que no necesitas.</p>
+<p><img alt="Editar informe" src="../Imagenes/UT_Editar_Informes/editar_informe2.png" /></p>
+<ul>
+<li>Para algunos informes (como el ejemplo de Albarán) es necesario eliminar una parte del Script. Acceda al apartado de Script:</li>
+</ul>
+<p><img alt="Scripts" src="../Imagenes/UT_Editar_Informes/scripts.png" /> </p>
+<ul>
+<li>Si esas líneas están en el script, elimínalas:</li>
+</ul>
+<p><img alt="Scripts" src="../Imagenes/UT_Editar_Informes/scripts2.png" /></p>
+<p><img alt="Scripts" src="../Imagenes/UT_Editar_Informes/scripts3.png" /> </p>
+<ul>
+<li>Volver al apartado de Designer:</li>
+</ul>
+<p><img alt="Scripts" src="../Imagenes/UT_Editar_Informes/designer.png" />     </p>
+</li>
+<li>
+<p><strong>Guardar los cambios</strong>:<br />
+   Asegúrate de guardar el informe después de realizar las eliminaciones.</p>
+</li>
+</ol>
+<h2 id="6-uso-de-la-nueva-plantilla">6. Uso de la nueva plantilla</h2>
+<p>Una vez creada el nuevo informe, selecionar y ir a "Vista previa":</p>
+<p><img alt="Vista previa" src="../Imagenes/UT_Editar_Informes/vista_previa.png" /></p>
+<p><img alt="Informe" src="../Imagenes/UT_Editar_Informes/informe.png" />   </p>
+<hr />
+<h2 id="5-consideraciones-finales">5. Consideraciones Finales</h2>
+<ul>
+<li>
+<p><strong>No es necesario configurar una nueva plantilla</strong>:<br />
+  Este proceso te permite modificar informes sin tener que crear una plantilla desde cero.</p>
+</li>
+<li>
+<p><strong>Proceso rápido y sencillo</strong>:<br />
+  La clonación y edición de informes es un método eficiente para personalizar documentos.</p>
+</li>
+<li>
+<p><strong>Revisión final</strong>:<br />
+  Antes de guardar el informe, asegúrate de revisarlo cuidadosamente para garantizar que cumple con los requisitos deseados.</p>
+</li>
+</ul>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2.UT_Crear_Materiales_enMATERIAL/" class="btn btn-neutral float-left" title="2. Creación de materiales proprios en enMATERIALES"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/mvrodgers/manual-de-usuario" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../2.UT_Crear_Materiales_enMATERIAL/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

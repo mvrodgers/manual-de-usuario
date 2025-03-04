@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>2. Facturación - Documentos</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2. Facturaci\u00f3n";
+        var mkdocs_page_input_path = "Procesos\\2.PR_Facturas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentos
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuraciones</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">1. Configuración Inicial de ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración Inicial de enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procesos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">1. Ventas y Compras</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2. Facturación</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-uso-de-filtros-en-listados">2. Uso de Filtros en Listados</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-acceder-a-los-filtros">2.1. Acceder a los filtros</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-guardar-filtros-personalizados">2.2. Guardar filtros personalizados</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-creacion-de-facturas-desde-presupuestos">3. Creación de Facturas desde Presupuestos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-crear-un-presupuesto">3.1. Crear un presupuesto:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-generar-la-factura">3.2. Generar la factura:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-enviar-la-factura-al-cliente">3.3. Enviar la factura al cliente:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-gestion-de-cobros">4. Gestión de Cobros</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-marcar-facturas-como-cobradas">4.1. Marcar facturas como cobradas:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-informes-de-cobros">4.2. Informes de cobros:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-facturacion-desde-pedidos">5. Facturación desde Pedidos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-facturacion-desde-pedido">5.1. Facturación desde pedido</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-facturacion-desde-albaranes">6. Facturación desde Albaranes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-crear-albaranes-desde-pedidos">6.1. Crear albaranes desde pedidos:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-facturar-desde-albaranes">6.2. Facturar desde albaranes:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-formas-y-modos-de-pago">7. Formas y Modos de Pago</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-formas-de-pago">7.1. Formas de pago:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-modos-de-pago">7.2. Modos de pago:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-rectificativas-y-anulaciones">8. Rectificativas y Anulaciones</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-facturas-recien-creadas">8.1. Facturas recién creadas:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#82-facturas-ya-enviadas">8.2. Facturas ya enviadas:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-consideraciones-finales">9. Consideraciones Finales</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.PR_Manual_Stock_Control/">3. Sistema de control de stock</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Proyecto_cliente/">4. Proyectos, Clientes y Proveedores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">5. Informes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales proprios en enMATERIALES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/3.UT_Editar_Informes/">3. Creación y Edición de Informes Personalizados</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentos</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Procesos</li>
+      <li class="breadcrumb-item active">2. Facturación</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/mvrodgers/manual-de-usuario/edit/master/docs/Procesos/2.PR_Facturas.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="2-facturacion">2. Facturación</h1>
+<!-- 1. [Introducción](#1-introducción)
+2. [Uso de Filtros en Listados](#2-uso-de-filtros-en-listados)
+   - [2.1. Acceder a los filtros](#21-acceder-a-los-filtros)
+   - [2.2. Guardar filtros personalizados](#22-guardar-filtros-personalizados)
+3. [Creación de Facturas desde Presupuestos](#3-creación-de-facturas-desde-presupuestos)
+   - [3.1. Crear un presupuesto](#31-crear-un-presupuesto)
+   - [3.2. Generar la factura](#32-generar-la-factura)
+   - [3.3. Enviar la factura al cliente](#33-enviar-la-factura-al-cliente)
+4. [Gestión de Cobros](#4-gestión-de-cobros)
+   - [4.1. Marcar facturas como cobradas](#41-marcar-facturas-como-cobradas)
+   - [4.2. Informes de cobros](#42-informes-de-cobros)
+5. [Facturación desde Pedidos](#5-facturación-desde-pedidos)
+   - [5.1. Facturación desde pedido](#51-facturación-desde-pedido)
+6. [Facturación desde Albaranes](#6-facturación-desde-albaranes)
+   - [6.1. Crear albaranes desde pedidos](#61-crear-albaranes-desde-pedidos)
+   - [6.2. Facturar desde albaranes](#62-facturar-desde-albaranes)
+7. [Formas y Modos de Pago](#7-formas-y-modos-de-pago)
+   - [7.1. Formas de pago](#71-formas-de-pago)
+   - [7.2. Modos de pago](#72-modos-de-pago)
+8. [Rectificativas y Anulaciones](#8-rectificativas-y-anulaciones)
+   - [8.1. Facturas recién creadas](#81-facturas-recién-creadas)
+   - [8.2. Facturas ya enviadas](#82-facturas-ya-enviadas)
+9. [Consideraciones Finales](#9-consideraciones-finales) -->
+
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual explica el proceso de creación, edición y gestión de facturas. Aprenderás a utilizar filtros, crear facturas desde presupuestos, gestionar cobros y realizar ajustes necesarios.</p>
+<hr />
+<h2 id="2-uso-de-filtros-en-listados">2. Uso de Filtros en Listados</h2>
+<p>Los filtros permiten personalizar la visualización de los documentos en los listados. Sigue estos pasos:</p>
+<h3 id="21-acceder-a-los-filtros">2.1. Acceder a los filtros</h3>
+<ul>
+<li>
+<p>En la cabecera de los listados, utiliza los filtros para definir qué columnas y datos deseas ver.</p>
+<p><img alt="Facturas" src="../Imagenes/PR_Facturas/cabecera.png" /></p>
+</li>
+<li>
+<p>Por ejemplo, puedes crear un filtro llamado "Facturas" que muestre solo las columnas necesarias (empresa, proyecto, fecha de factura, número, estado del documento, etc.).</p>
+<p><img alt="Filtros" src="../Imagenes/PR_Facturas/filtros.png" /></p>
+</li>
+</ul>
+<h3 id="22-guardar-filtros-personalizados">2.2. Guardar filtros personalizados</h3>
+<ul>
+<li>
+<p>Organiza las columnas según tus necesidades. Puedes eliminar, añadir y cambiar las columnas de posición con el botón derecho sobre cualquier cabecera.</p>
+<p><img alt="Organizar filtro" src="../Imagenes/PR_Facturas/organizar_filtro.png" /></p>
+</li>
+<li>
+<p>Otra opción para cambiar de posición y eliminar las columnas es arrastrarlas.</p>
+<p><img alt="Organizar filtro" src="../Imagenes/PR_Facturas/eliminar_columnas.gif" /></p>
+</li>
+<li>
+<p>Desde "Filtros", accede a "Gestión de filtros" y añade un nuevo filtro.</p>
+<p><img alt="Nuevo filtro" src="../Imagenes/PR_Facturas/nuevo_filtro.png" /></p>
+</li>
+<li>
+<p>Guarda el filtro con un nombre específico (ej. "Facturas 2").</p>
+<p><img alt="Nuevo filtro" src="../Imagenes/PR_Facturas/nuevo_filtro2.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Cada usuario puede tener sus propios filtros guardados.</p>
+</blockquote>
+<hr />
+<h2 id="3-creacion-de-facturas-desde-presupuestos">3. Creación de Facturas desde Presupuestos</h2>
+<p>Para crear facturas a partir de presupuestos, sigue estos pasos:</p>
+<h3 id="31-crear-un-presupuesto">3.1. Crear un presupuesto:</h3>
+<ul>
+<li>Añade líneas con los productos o servicios (ej. ventanas, chapas).</li>
+<li>
+<p>Define cantidades y precios.</p>
+<p><img alt="Presupuesto" src="../Imagenes/PR_Facturas/presupuesto.png" /></p>
+</li>
+</ul>
+<h3 id="32-generar-la-factura">3.2. Generar la factura:</h3>
+<ul>
+<li>Accede al apartado de facturación.</li>
+<li>
+<p>Selecciona "Crear factura" desde el presupuesto.</p>
+<p><img alt="Crear factura" src="../Imagenes/PR_Facturas/crear_factura.png" /> </p>
+</li>
+<li>
+<p>Elige el tipo de factura:</p>
+<ul>
+<li>
+<p><strong>Factura de anticipo</strong>: Permite cobrar un importe parcial y facturar el resto más adelante.</p>
+<p><img alt="Factura anticipo" src="../Imagenes/PR_Facturas/anticipo_factura.png" /></p>
+</li>
+<li>
+<p><strong>Factura por unidades</strong>: Factura solo las unidades indicadas que quieras facturar. Luego obliga a continuar facturando en el mismo modo (esta marcada por defecto).</p>
+<p><img alt="Factura unidades" src="../Imagenes/PR_Facturas/unidades_factura.png" /></p>
+</li>
+<li>
+<p><strong>Introducir importe a facturar</strong>: Permite cobrar un importe específico del total de la factura. Luego obliga a continuar facturando en el mismo modo.</p>
+<p><img alt="Factura importe" src="../Imagenes/PR_Facturas/importe_factura.png" /></p>
+</li>
+<li>
+<p><strong>Introducir porcentaje a facturar</strong>: Permite cobrar un porcentaje específico del total de la factura. Luego obliga a continuar facturando en el mismo modo.</p>
+</li>
+</ul>
+<p><img alt="Factura porcentaje" src="../Imagenes/PR_Facturas/porcentage_factura.png" /></p>
+</li>
+</ul>
+<h3 id="33-enviar-la-factura-al-cliente">3.3. Enviar la factura al cliente:</h3>
+<ul>
+<li>
+<p>Una vez creada, puedes ver la factura en vista previa antes de enviarla o imprimirla.</p>
+<p><img alt="Factura" src="../Imagenes/PR_Facturas/factura.png" /></p>
+<p><img alt="Vista previa" src="../Imagenes/PR_Facturas/vista_previa.png" /></p>
+<p><img alt="Vista previa" src="../Imagenes/PR_Facturas/vista_previa2.png" /> </p>
+</li>
+<li>
+<p>Envía la factura al cliente por correo electrónico o imprímela.</p>
+<p><img alt="Imprimir email" src="../Imagenes/PR_Facturas/imprimir_email.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> La factura se puede generar desde el presupuesto, pedido o albarán. Es recomendable generar las facturas siempre desde el mismo documento, es decir, si haces desde el pedido (el pedido normalmente es el que se acuerda con el cliente), seguir generando las facturas siempre desde ahí para una mejor gestión y trazabilidad.</p>
+</blockquote>
+<hr />
+<h2 id="4-gestion-de-cobros">4. Gestión de Cobros</h2>
+<p>Para gestionar los cobros de las facturas:</p>
+<h3 id="41-marcar-facturas-como-cobradas">4.1. Marcar facturas como cobradas:</h3>
+<ul>
+<li>
+<p>Desde el propio documento de la factura, se puede marcar que la factura está cobrada.</p>
+<p><img alt="Factura cobrada" src="../Imagenes/PR_Facturas/cobrado_factura.png" /></p>
+</li>
+<li>
+<p>Otra opción es acceder al listado de vencimientos desde "Documentos de ventas".</p>
+<p><img alt="Filtrar vencimiento" src="../Imagenes/PR_Facturas/listado_vencimento.png" /></p>
+</li>
+<li>
+<p>Filtra las facturas pendientes de cobro.</p>
+<p><img alt="Filtrar cobro" src="../Imagenes/PR_Facturas/filtrar_cobrado.png" /></p>
+</li>
+<li>
+<p>Selecciona las facturas y márcalas como cobradas. Para seleccionar más de una factura, usa la tecla <strong>Ctrl + Click</strong> o <strong>Ctrl + A</strong> para seleccionar todas las facturas.</p>
+<p><img alt="Seleccionar cobro" src="../Imagenes/PR_Facturas/selecionar_cobro.png" /></p>
+</li>
+<li>
+<p>Indica el modo de pago (transferencia, pagaré, etc.), la fecha de cobro y la fecha de ingreso en cuenta. Los campos marcados en rojo son obligatorios. Estos campos se pueden configurar previamente en el apartado "Formas de pago".</p>
+<p><img alt="Modo cobro" src="../Imagenes/PR_Facturas/modo_cobro.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> En este apartado, como en otros listados de documentos, se pueden utilizar los filtros según sea necesario.</p>
+</blockquote>
+</li>
+<li>
+<p>En el listado de documentos de ventas, aparecerá en la trazabilidad del presupuesto el estado de la factura como "Cobrado".</p>
+<p><img alt="Cobro estado" src="../Imagenes/PR_Facturas/cobrado_estado.png" /></p>
+</li>
+</ul>
+<h3 id="42-informes-de-cobros">4.2. Informes de cobros:</h3>
+<ul>
+<li>
+<p>Acepta el presupuesto para que genere un pedido (en el caso de que hayas facturado desde el presupuesto).</p>
+<p><img alt="Aceptar presupuesto" src="../Imagenes/PR_Facturas/acceptar_presupuesto.png" /></p>
+</li>
+<li>
+<p>Utiliza el informe "Estado de facturación y cobros" para ver el estado de las facturas (cobradas, pendientes, porcentaje de facturación, etc.). Filtra por el presupuesto que quieras que se muestre.</p>
+<p><img alt="Estado facturación y cobros" src="../Imagenes/PR_Facturas/estado_facturacion.png" /></p>
+<p><img alt="Estado facturación y cobros" src="../Imagenes/PR_Facturas/estado_facturacion2.png" /></p>
+</li>
+<li>
+<p>Utiliza el informe de listado de facturas para ver la información de la factura (fecha, cliente, base imponible, IVA, total de la factura, etc.). Este informe se puede listar desde un rango de fechas o marcando un check que indica que se aplique solo a las facturas que estén en el filtrado del listado.</p>
+<p><img alt="Listado facturas" src="../Imagenes/PR_Facturas/listado_factura.png" /></p>
+<p><img alt="Listado facturas" src="../Imagenes/PR_Facturas/listado_factura2.png" /></p>
+<p><img alt="Listado facturas" src="../Imagenes/PR_Facturas/listado_factura3.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="5-facturacion-desde-pedidos">5. Facturación desde Pedidos</h2>
+<p>Para facturar desde pedidos, sigue estos pasos:</p>
+<h3 id="51-facturacion-desde-pedido">5.1. Facturación desde pedido</h3>
+<ul>
+<li>
+<p>Se puede facturar directamente desde "Pedido", siguiendo los mismos pasos que en el presupuesto. </p>
+</li>
+<li>
+<p>Otra manera de facturar sería crear una producción desde un pedido e indicar la cantidad de ventanas que quieres que estén en esta fase de producción. </p>
+<p><img alt="Crear producción" src="../Imagenes/PR_Facturas/crear_produccion.png" /></p>
+<p><img alt="Fase producción" src="../Imagenes/PR_Facturas/fase_produccion.png" /></p>
+<p><img alt="Producción 1" src="../Imagenes/PR_Facturas/produccion_1.png" /></p>
+</li>
+<li>
+<p>Una vez confirmes que se han fabricado las ventanas indicadas en la fase de "Producción 1", por ejemplo, puedes ir al pedido y crear una factura indicando la cantidad a facturar.</p>
+<p><img alt="Factura pedido" src="../Imagenes/PR_Facturas/fase_produccion.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Se recomienda siempre facturar desde el pedido, ya que es lo que se acuerda con el cliente para aceptar el presupuesto.</p>
+</blockquote>
+<ul>
+<li>
+<p>En el caso de que descuentes el total de la factura (unidad) y hayas emitido y cobrado una factura de anticipo, al intentar confirmar la factura, te aparecerá un mensaje para confirmar o no que descuentes el anticipo.</p>
+<p><img alt="Descuento anticipo" src="../Imagenes/PR_Facturas/descontar_anticipo.png" /></p>
+</li>
+<li>
+<p>Al confirmar, se descontará el anticipo de la factura.</p>
+<p><img alt="Importe anticipo" src="../Imagenes/PR_Facturas/importe_anticipo.png" /></p>
+</li>
+<li>
+<p>Al generar la factura para enviar al cliente, verás en detalle lo que se ha cobrado y descontado.</p>
+<p><img alt="Informe factura" src="../Imagenes/PR_Facturas/informe_factura.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="6-facturacion-desde-albaranes">6. Facturación desde Albaranes</h2>
+<p>Si trabajas con albaranes, sigue estos pasos:</p>
+<h3 id="61-crear-albaranes-desde-pedidos">6.1. Crear albaranes desde pedidos:</h3>
+<ul>
+<li>
+<p>Genera albaranes para las producciones realizadas.</p>
+<p><img alt="Crear albarán" src="../Imagenes/PR_Facturas/crear_albaran.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Asegúrate de que los precios y descripciones sean correctos.</p>
+</blockquote>
+<h3 id="62-facturar-desde-albaranes">6.2. Facturar desde albaranes:</h3>
+<ul>
+<li>Accede al pedido correspondiente.</li>
+<li>
+<p>Selecciona "Crear factura" desde el albarán y sigue los mismos pasos anteriores.</p>
+<p><img alt="Factura albarán" src="../Imagenes/PR_Facturas/factura_albaran.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Verifica que los precios y las unidades coincidan con lo acordado con el cliente, ya que puede variar dependiendo si hay alguna modificación en la producción (ej. cambiar la medida de la ventana) y que puede afectar el precio y facturar con un precio distinto del pedido.</p>
+</blockquote>
+<hr />
+<h2 id="7-formas-y-modos-de-pago">7. Formas y Modos de Pago</h2>
+<p>Configura las formas y modos de pago según tus necesidades:</p>
+<p><img alt="Configuración" src="../Imagenes/PR_Facturas/configuracion_venta.png" /></p>
+<h3 id="71-formas-de-pago">7.1. Formas de pago:</h3>
+<ul>
+<li>
+<p>Define cómo se pagará (ej. 30 días, 60 días, 90 días). Se pueden crear tantas formas como se necesiten con diferentes configuraciones. </p>
+<p><img alt="Crear formas pago" src="../Imagenes/PR_Facturas/crear_formas.png" /></p>
+</li>
+<li>
+<p>Configura si es necesario exigir el modo de pago, la fecha real de vencimiento, la fecha de ingreso y el banco. Esta configuración se reflejará en el apartado de listado de vencimientos cuando se marque la factura como cobrada y aparezcan los campos en rojo como obligatorios a rellenar. </p>
+<p><img alt="Nuevas formas pago" src="../Imagenes/PR_Facturas/nueva_formas.png" /></p>
+</li>
+<li>
+<p>Establece el número de vencimientos y los porcentajes de pago.</p>
+<p><img alt="Forma pago" src="../Imagenes/PR_Facturas/forma_pago.png" /></p>
+</li>
+</ul>
+<h3 id="72-modos-de-pago">7.2. Modos de pago:</h3>
+<ul>
+<li>
+<p>Indica cómo se realizará el pago (transferencia, pagaré, contado).</p>
+<p><img alt="Modo pago" src="../Imagenes/PR_Facturas/modo_pago.png" /></p>
+</li>
+<li>
+<p>Configura si es necesario exigir la fecha de cobro, el banco o la fecha de ingreso en cuenta.</p>
+<p><img alt="Nuevo modo pago" src="../Imagenes/PR_Facturas/nuevo_modo.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="8-rectificativas-y-anulaciones">8. Rectificativas y Anulaciones</h2>
+<p>Si necesitas corregir o anular una factura:</p>
+<h3 id="81-facturas-recien-creadas">8.1. Facturas recién creadas:</h3>
+<ul>
+<li>
+<p>Si la factura no ha sido enviada, elimínala y vuelve a crearla con la misma numeración. Hay diferentes modos de eliminar la factura:</p>
+<ul>
+<li>
+<p>Desde el listado de ventas, busca la factura, haz clic con el botón derecho sobre la línea y selecciona "Eliminar".</p>
+<p><img alt="Eliminar factura" src="../Imagenes/PR_Facturas/eliminar_factura.png" /> </p>
+</li>
+<li>
+<p>Desde la factura, abre la factura y elimínala desde la pestaña "Factura", haz clic con el botón derecho y selecciona "Eliminar".</p>
+<p><img alt="Eliminar factura" src="../Imagenes/PR_Facturas/eliminar_factura2.png" /></p>
+</li>
+<li>
+<p>Desde la factura, arriba a la izquierda, haz clic sobre el logo de ENBLAU y selecciona "Eliminar".</p>
+<p><img alt="Eliminar factura" src="../Imagenes/PR_Facturas/eliminar_factura3.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="82-facturas-ya-enviadas">8.2. Facturas ya enviadas:</h3>
+<ul>
+<li>
+<p>En el caso de que la factura ya haya sido enviada, emite una factura rectificativa.</p>
+<p><img alt="Factura rectificada" src="../Imagenes/PR_Facturas/factura_retificada.png" /></p>
+</li>
+<li>
+<p>Asegúrate de que cumpla con los requisitos de Hacienda.</p>
+</li>
+</ul>
+<hr />
+<h2 id="9-consideraciones-finales">9. Consideraciones Finales</h2>
+<ul>
+<li>
+<p><strong>Mantén los pedidos actualizados</strong>:<br />
+  Todos los documentos deben estar vinculados a un pedido para facilitar el control de costes y facturación.</p>
+</li>
+<li>
+<p><strong>Exportación contable</strong>:<br />
+  Al finalizar el mes, exporta los datos para contabilidad desde el listado de ventas o compras.</p>
+</li>
+<li>
+<p><strong>Dudas y soporte</strong>:<br />
+  Si surge alguna duda, envía un correo al equipo de soporte para resolverla rápidamente.</p>
+</li>
+</ul>
+<hr />
+<p>Este manual te permitirá gestionar la facturación de manera eficiente y evitar errores comunes.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1.PR_Ventas_Compras/" class="btn btn-neutral float-left" title="1. Ventas y Compras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3.PR_Manual_Stock_Control/" class="btn btn-neutral float-right" title="3. Sistema de control de stock">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/mvrodgers/manual-de-usuario" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../1.PR_Ventas_Compras/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../3.PR_Manual_Stock_Control/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>1. Configuración Inicial de ENBLAU - Documentos</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "1. Configuraci\u00f3n Inicial de ENBLAU";
+        var mkdocs_page_input_path = "Configuraciones\\1. CO_Configuracion_Inicial_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentos
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuraciones</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1. Configuración Inicial de ENBLAU</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-proposito">1. Propósito</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-configuracion-general">2. Configuración General</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-configuracion-de-conexion-con-logikal">2.1. Configuración de Conexión con Logikal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-general">2.2. General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-textos-en-ventas">2.3. Textos en Ventas</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-gestion-de-usuarios">3. Gestión de Usuarios</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-configuracion-de-cuentas-de-email">4. Configuración de Cuentas de Email</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-gestion-de-empresas">5. Gestión de Empresas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-configuracion-de-proyectos">6. Configuración de Proyectos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-estados">6.1. Estados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-directorios-por-defecto">6.2. Directorios por Defecto</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-configuracion-de-ventas">7. Configuración de Ventas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-numeraciones">7.1. Numeraciones</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-formas-de-pago">7.2. Formas de Pago</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#73-bancos">7.3. Bancos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#74-modos-de-pago">7.4. Modos de Pago</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#75-conceptos-de-roturas">7.5. Conceptos de Roturas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#76-clasificaciones">7.6. Clasificaciones</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#77-sujetos-pasivos-iva">7.7. Sujetos Pasivos (IVA)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#78-directorios-por-defecto">7.8. Directorios por Defecto</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-configuracion-de-compras">8. Configuración de Compras</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-numeraciones">8.1. Numeraciones</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#82-formas-de-pago">8.2. Formas de Pago</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#83-clasificaciones">8.3. Clasificaciones</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#84-directorios-por-defecto">8.4. Directorios por Defecto</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-conclusion">9. Conclusión</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración Inicial de enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procesos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/1.PR_Ventas_Compras/">1. Ventas y Compras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/2.PR_Facturas/">2. Facturación</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/3.PR_Manual_Stock_Control/">3. Sistema de control de stock</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/4.PR_Proyecto_cliente/">4. Proyectos, Clientes y Proveedores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/5.PR_Informes/">5. Informes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales proprios en enMATERIALES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/3.UT_Editar_Informes/">3. Creación y Edición de Informes Personalizados</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentos</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Configuraciones</li>
+      <li class="breadcrumb-item active">1. Configuración Inicial de ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/mvrodgers/manual-de-usuario/edit/master/docs/Configuraciones/1. CO_Configuracion_Inicial_ENBLAU.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="1-configuracion-inicial-de-enblau">1. Configuración Inicial de ENBLAU</h1>
+<!-- ## Índice
+
+1. [Propósito](#1-propósito)
+2. [Configuración General](#2-configuración-general)
+   - [2.1. Configuración de Conexión con Logikal](#21-configuración-de-conexión-con-logikal)
+   - [2.2. General](#22-general)
+   - [2.3. Textos en Ventas](#23-textos-en-ventas)
+3. [Gestión de Usuarios](#3-gestión-de-usuarios)
+4. [Configuración de Cuentas de Email](#4-configuración-de-cuentas-de-email)
+5. [Gestión de Empresas](#5-gestión-de-empresas)
+6. [Configuración de Proyectos](#6-configuración-de-proyectos)
+   - [6.1. Estados](#61-estados)
+   - [6.2. Directorios por Defecto](#62-directorios-por-defecto)
+7. [Configuración de Ventas](#7-configuración-de-ventas)
+   - [7.1. Numeraciones](#71-numeraciones)
+   - [7.2. Formas de Pago](#72-formas-de-pago)
+   - [7.3. Bancos](#73-bancos)
+   - [7.4. Modos de Pago](#74-modos-de-pago)
+   - [7.5. Conceptos de Roturas](#75-conceptos-de-roturas)
+   - [7.6. Clasificaciones](#76-clasificaciones)
+   - [7.7. Sujetos Pasivos (IVA)](#77-sujetos-pasivos-iva)
+   - [7.8. Directorios por Defecto](#78-directorios-por-defecto)
+8. [Configuración de Compras](#8-configuración-de-compras)
+   - [8.1. Numeraciones](#81-numeraciones)
+   - [8.2. Formas de Pago](#82-formas-de-pago)
+   - [8.3. Clasificaciones](#83-clasificaciones)
+   - [8.4. Directorios por Defecto](#84-directorios-por-defecto) -->
+
+<hr />
+<h2 id="1-proposito">1. Propósito</h2>
+<p>El presente manual está diseñado para guiar a los nuevos usuarios en la configuración inicial de ENBLAU. Esta configuración incluye todo lo necesario para que el cliente pueda realizar ventas, compras y la emisión de facturas.</p>
+<hr />
+<h2 id="2-configuracion-general">2. Configuración General</h2>
+<p><img alt="general" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<h3 id="21-configuracion-de-conexion-con-logikal">2.1. Configuración de Conexión con Logikal</h3>
+<ul>
+<li>
+<p>Para conectar con la fábrica y los proyectos de Logikal, es necesario indicar la ruta de instalación y la DLL de Logikal (unidad de red donde apunta Logikal).</p>
+</li>
+<li>
+<p>Desde <strong>General</strong>, ir a <strong>Logikal - Conexión y Proyectos</strong>.</p>
+</li>
+</ul>
+<p><img alt="configuracion_inicial" src="../Imagenes/CO_Config_ENBLAU/conexion_logikal.png" /></p>
+<hr />
+<h3 id="22-general">2.2. General</h3>
+<p><img alt="general" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<ul>
+<li><strong>Ruta de almacenamiento</strong>: Indicar la ruta donde se guardarán los documentos de ENBLAU y Logikal (unidad de red). Ejemplo:</li>
+</ul>
+<p><img alt="ruta_almacenamiento" src="../Imagenes/CO_Config_ENBLAU/ruta_almacenamiento.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Es recomendable utilizar una unidad de red. Si no existe, créala.</p>
+</blockquote>
+<ul>
+<li><strong>Información de la empresa</strong>: Rellenar los campos necesarios con la información de la empresa, como nombre, CIF, dirección, logos, etc.</li>
+</ul>
+<p><img alt="info_empresa" src="../Imagenes/CO_Config_ENBLAU/info_empresa.png" /></p>
+<hr />
+<h3 id="23-textos-en-ventas">2.3. Textos en Ventas</h3>
+<ul>
+<li>Añadir textos para documentos de ventas, como observaciones, condiciones, etc.</li>
+</ul>
+<p><img alt="texto_ventas" src="../Imagenes/CO_Config_ENBLAU/texto_ventas.png" /></p>
+<hr />
+<h2 id="3-gestion-de-usuarios">3. Gestión de Usuarios</h2>
+<ul>
+<li>Para dar de alta a nuevos usuarios, accede a <strong>Usuarios</strong>.</li>
+</ul>
+<p><img alt="usuarios" src="../Imagenes/CO_Config_ENBLAU/usuarios.png" /></p>
+<ul>
+<li>En <strong>Nuevo</strong>, puedes crear nuevos usuarios.</li>
+</ul>
+<p><img alt="usuarios2" src="../Imagenes/CO_Config_ENBLAU/usuarios2.png" /></p>
+<ul>
+<li>Se abrirá una ventana para configurar la información del usuario (nombre, dirección, email, teléfono, etc.), el tipo de usuario (Técnico, Comercial, Taller, etc. Se puede asignar más de un tipo) y los permisos. Los permisos solo pueden ser asignados por usuarios de tipo administrador.</li>
+</ul>
+<p><img alt="usuarios3" src="../Imagenes/CO_Config_ENBLAU/usuarios3.png" /></p>
+<ul>
+<li>Una vez dado de alta, el usuario podrá ser editado en cualquier momento.</li>
+</ul>
+<hr />
+<h2 id="4-configuracion-de-cuentas-de-email">4. Configuración de Cuentas de Email</h2>
+<ul>
+<li>Para configurar las cuentas de correo de cada usuario, accede a <strong>Cuentas de Email</strong>.</li>
+</ul>
+<p><img alt="cuentas_email" src="../Imagenes/CO_Config_ENBLAU/cuentas_email.png" /></p>
+<p><img alt="cuentas_email2" src="../Imagenes/CO_Config_ENBLAU/cuentas_email2.png" /></p>
+<hr />
+<h2 id="5-gestion-de-empresas">5. Gestión de Empresas</h2>
+<ul>
+<li>En caso de tener varias empresas, puedes crearlas en el apartado de <strong>Empresas</strong>, en <strong>Añadir</strong>. Luego, rellena la información en <strong>General</strong> y <strong>Textos en Ventas</strong> según sea necesario para cada empresa.</li>
+</ul>
+<p><img alt="empresa" src="../Imagenes/CO_Config_ENBLAU/empresa.png" /></p>
+<p><img alt="empresa_nuevo" src="../Imagenes/CO_Config_ENBLAU/empresa_nuevo.png" /></p>
+<blockquote>
+<p><strong>Importante:</strong> Si no se indica otra empresa, los proyectos tomarán por defecto la empresa añadida previamente en la configuración básica de <strong>General</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="6-configuracion-de-proyectos">6. Configuración de Proyectos</h2>
+<ul>
+<li>Desde el apartado de <strong>Ventas</strong> selecionar <strong>Proyectos</strong>, accede a <strong>Configuración</strong>.</li>
+</ul>
+<p><img alt="conf_proyectos" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos.png" /></p>
+<p><img alt="conf_proyectos2" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos2.png" /></p>
+<ul>
+<li>Desde la configuración, accederás a un desplegable con un listado para configurar. Para una configuración inicial, es necesario configurar <strong>Estados</strong> y <strong>Directorios por Defecto</strong>.</li>
+</ul>
+<p><img alt="conf_proyectos3" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos3.png" /></p>
+<h3 id="61-estados">6.1. Estados</h3>
+<ul>
+<li>Al seleccionar <strong>Estados</strong>, se abrirá una ventana para definir los estados de los proyectos (obra).</li>
+</ul>
+<p><img alt="estados" src="../Imagenes/CO_Config_ENBLAU/estados.png" /></p>
+<h3 id="62-directorios-por-defecto">6.2. Directorios por Defecto</h3>
+<ul>
+<li>Al seleccionar <strong>Directorios por Defecto</strong>, se abrirá una ventana para definir los directorios necesarios en la carpeta de documentación.</li>
+</ul>
+<p><img alt="dir_defecto" src="../Imagenes/CO_Config_ENBLAU/dir_defecto.png" /></p>
+<hr />
+<h2 id="7-configuracion-de-ventas">7. Configuración de Ventas</h2>
+<ul>
+<li>Desde el apartado de <strong>Ventas</strong> selecionar <strong>Documentos de Ventas</strong>, accede a <strong>Configuración</strong>.</li>
+</ul>
+<p><img alt="conf_ventas" src="../Imagenes/CO_Config_ENBLAU/conf_ventas.png" /></p>
+<p><img alt="conf_ventas2" src="../Imagenes/CO_Config_ENBLAU/conf_ventas2.png" /></p>
+<ul>
+<li>Desde la configuración, accederás a un desplegable con un listado para configurar. Para una configuración inicial, es necesario configurar <strong>Numeraciones</strong>, <strong>Formas de Pago</strong>, <strong>Bancos</strong>, <strong>Modos de Pago</strong>, <strong>Conceptos de Roturas</strong>, <strong>Clasificaciones</strong>, <strong>Sujetos Pasivos (IVA)</strong> y <strong>Directorios por Defecto</strong>.</li>
+</ul>
+<p><img alt="conf_ventas3" src="../Imagenes/CO_Config_ENBLAU/conf_ventas3.png" /></p>
+<h3 id="71-numeraciones">7.1. Numeraciones</h3>
+<ul>
+<li>Al seleccionar <strong>Numeraciones</strong>, se abrirá una ventana para definir los tipos de numeraciones para documentos de ventas, asignando números correlativos a los documentos.</li>
+</ul>
+<p><img alt="numeraciones" src="../Imagenes/CO_Config_ENBLAU/numeraciones.png" /></p>
+<ul>
+<li>Ejemplo: Tipo de documento "Presupuesto", prefijo (Alpha) y número (siguiente número) - <strong>PR1000272</strong>.</li>
+</ul>
+<p><img alt="numeraciones2" src="../Imagenes/CO_Config_ENBLAU/numeraciones2.png" /></p>
+<h3 id="72-formas-de-pago">7.2. Formas de Pago</h3>
+<ul>
+<li>Al seleccionar <strong>Formas de Pago</strong>, se abrirá una ventana para definir las formas de pago necesarias para generar vencimientos en las facturas.</li>
+</ul>
+<p><img alt="formas_pago" src="../Imagenes/CO_Config_ENBLAU/formas_pago.png" /></p>
+<ul>
+<li>Ejemplo: Indicar en cuántas veces y el porcentaje que el cliente debe pagar en cada vencimiento.</li>
+</ul>
+<p><img alt="formas_pago2" src="../Imagenes/CO_Config_ENBLAU/formas_pago2.png" /></p>
+<h3 id="73-bancos">7.3. Bancos</h3>
+<ul>
+<li>Al seleccionar <strong>Bancos</strong>, se abrirá una ventana para indicar la información del banco. El nombre y un codigo.</li>
+</ul>
+<p><img alt="banco" src="../Imagenes/CO_Config_ENBLAU/banco.png" /></p>
+<h3 id="74-modos-de-pago">7.4. Modos de Pago</h3>
+<ul>
+<li>Al seleccionar <strong>Modos de Pago</strong>, se abrirá una ventana para definir los distintos modos en los que se puede realizar el cobro de un vencimiento.</li>
+</ul>
+<p><img alt="modo_pago" src="../Imagenes/CO_Config_ENBLAU/modo_pago.png" /></p>
+<h3 id="75-conceptos-de-roturas">7.5. Conceptos de Roturas</h3>
+<ul>
+<li>Al seleccionar <strong>Conceptos de Roturas</strong>, se abrirá una ventana para definir los conceptos de rotura según sea necesario.</li>
+</ul>
+<p><img alt="rotura" src="../Imagenes/CO_Config_ENBLAU/rotura.png" /></p>
+<h3 id="76-clasificaciones">7.6. Clasificaciones</h3>
+<ul>
+<li>Al seleccionar <strong>Clasificaciones</strong>, se abrirá una ventana para definir las clasificaciones de presupuestos.</li>
+</ul>
+<p><img alt="clasificaciones" src="../Imagenes/CO_Config_ENBLAU/clasificaciones.png" /></p>
+<h3 id="77-sujetos-pasivos-iva">7.7. Sujetos Pasivos (IVA)</h3>
+<ul>
+<li>Al seleccionar <strong>Sujetos Pasivos (IVA)</strong>, se abrirá una ventana para definir los tipos de sujetos pasivos.</li>
+</ul>
+<p><img alt="sujeto_pasivo" src="../Imagenes/CO_Config_ENBLAU/sujeto_pasivo.png" /></p>
+<h3 id="78-directorios-por-defecto">7.8. Directorios por Defecto</h3>
+<ul>
+<li>Al seleccionar <strong>Directorios por Defecto</strong>, se abrirá una ventana para definir los directorios necesarios en la carpeta de documentación.</li>
+</ul>
+<p><img alt="dir_defecto_ventas" src="../Imagenes/CO_Config_ENBLAU/dir_defecto_ventas.png" /></p>
+<hr />
+<h2 id="8-configuracion-de-compras">8. Configuración de Compras</h2>
+<ul>
+<li>Desde el apartado de <strong>Comparas</strong> selecionar <strong>Documentos de Compras</strong>, accede a <strong>Configuración</strong>.</li>
+</ul>
+<p><img alt="conf_compras" src="../Imagenes/CO_Config_ENBLAU/conf_compras.png" /></p>
+<p><img alt="conf_compras2" src="../Imagenes/CO_Config_ENBLAU/conf_compras2.png" /></p>
+<ul>
+<li>Desde la configuración, accederás a un desplegable con un listado para configurar. Para una configuración inicial, es necesario configurar <strong>Numeraciones</strong>, <strong>Formas de Pago</strong>, <strong>Clasificaciones</strong> y <strong>Directorios por Defecto</strong>.</li>
+</ul>
+<p><img alt="conf_compras3" src="../Imagenes/CO_Config_ENBLAU/conf_compras3.png" /></p>
+<h3 id="81-numeraciones">8.1. Numeraciones</h3>
+<ul>
+<li>Al seleccionar <strong>Numeraciones</strong>, se abrirá una ventana para definir los tipos de numeraciones para documentos de compra, asignando números correlativos a los documentos.</li>
+</ul>
+<p><img alt="numeraciones3" src="../Imagenes/CO_Config_ENBLAU/numeraciones3.png" /></p>
+<ul>
+<li>Ejemplo: Tipo de documento "Pedido", prefijo (Alpha) y número (siguiente número) - <strong>PE70000082</strong>.</li>
+</ul>
+<p><img alt="numeraciones4" src="../Imagenes/CO_Config_ENBLAU/numeraciones4.png" /></p>
+<h3 id="82-formas-de-pago">8.2. Formas de Pago</h3>
+<ul>
+<li>Al seleccionar <strong>Formas de Pago</strong>, se abrirá una ventana para definir las formas de pago necesarias para generar vencimientos en las facturas.</li>
+</ul>
+<p><img alt="formas_pago3" src="../Imagenes/CO_Config_ENBLAU/formas_pago3.png" /></p>
+<ul>
+<li>Ejemplo: Indicar en cuántas veces y el porcentaje que se debe pagar en cada vencimiento.</li>
+</ul>
+<p><img alt="formas_pago2" src="../Imagenes/CO_Config_ENBLAU/formas_pago2.png" /></p>
+<h3 id="83-clasificaciones">8.3. Clasificaciones</h3>
+<ul>
+<li>Al seleccionar <strong>Clasificaciones</strong>, se abrirá una ventana para definir las clasificaciones de compras.</li>
+</ul>
+<p><img alt="clasificaciones2" src="../Imagenes/CO_Config_ENBLAU/clasificaciones2.png" /></p>
+<h3 id="84-directorios-por-defecto">8.4. Directorios por Defecto</h3>
+<ul>
+<li>Al seleccionar <strong>Directorios por Defecto</strong>, se abrirá una ventana para definir los directorios necesarios en la carpeta de documentación.</li>
+</ul>
+<p><img alt="dir_defecto_compras" src="../Imagenes/CO_Config_ENBLAU/dir_defecto_compras.png" /></p>
+<hr />
+<h2 id="9-conclusion">9. Conclusión</h2>
+<p>Siguiendo este manual, podrás hacer una configuracion inicial de ENBLAU para el uso de creación de documentos de compras y ventas.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.%20CO_Configuracion_Inicial_enCONTROL/" class="btn btn-neutral float-right" title="2. Configuración Inicial de enCONTROL">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/mvrodgers/manual-de-usuario" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2.%20CO_Configuracion_Inicial_enCONTROL/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

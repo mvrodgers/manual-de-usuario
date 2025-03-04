@@ -1,0 +1,14 @@
+/* Cambiar el color de fondo de la cinta lateral */
+.wy-side-nav-search, .wy-nav-side {
+    background-color: #4CAF50; /* Cambia este valor al color que desees */
+}
+
+/* Cambiar el color del texto en la cinta lateral */
+.wy-menu-vertical a {
+    color: #FFFFFF; /* Cambia este valor al color que desees */
+}
+
+/* Cambiar el color de fondo de los elementos activos o al pasar el ratón */
+.wy-menu-vertical a:hover, .wy-menu-vertical li.current a {
+    background-color: #388E3C; /* Cambia este valor al color que desees */
+}
