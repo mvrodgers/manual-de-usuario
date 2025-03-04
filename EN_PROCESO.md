@@ -1,1 +1,0 @@
-**El manual se encuentra actualmente en proceso de creación.**
