@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. Sistema de control de stock - Documentos</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. Sistema de control de stock";
+        var mkdocs_page_input_path = "Procesos\\3.PR_Manual_Stock_Control.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentos
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuraciones</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">1. Configuración Inicial de ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración Inicial de enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procesos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">1. Ventas y Compras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">2. Facturación</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Sistema de control de stock</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-proposito">1. Propósito</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-acceso-al-sistema">2. Acceso al sistema</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-gestion-pedidos-de-compra">3. Gestión pedidos de compra</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-pedidos-de-compra">3.1. Pedidos de compra</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-materiales-reservados">3.2. Materiales reservados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-articulos">3.3. Artículos</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-recepcion-de-materiales-ensite">4. Recepción de materiales enSITE</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-gestion-de-almacenes-y-movimientos">5. Gestión de almacenes y movimientos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-almacenes-layout">5.1. Almacenes Layout</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-movimientos-en-almacen">5.2. Movimientos en almacén</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-produccion-y-encontrol">6. Producción y enCONTROL</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-produccion">6.1. Producción</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-encontrol">6.2. enCONTROL</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-control-de-stock-y-reportes">7. Control de stock y reportes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-resolucion-de-problemas-omunes">8. Resolución de problemas omunes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-conclusion">9. Conclusión</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Proyecto_cliente/">4. Proyectos, Clientes y Proveedores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">5. Informes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales proprios en enMATERIALES</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/3.UT_Editar_Informes/">3. Creación y Edición de Informes Personalizados</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentos</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Procesos</li>
+      <li class="breadcrumb-item active">3. Sistema de control de stock</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/mvrodgers/manual-de-usuario/edit/master/docs/Procesos/3.PR_Manual_Stock_Control.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="3-sistema-de-control-de-stock">3. Sistema de control de stock</h1>
+<!-- ## Índice
+
+1. [Propósito](#1-propósito)
+2. [Acceso al Sistema](#2-acceso-al-sistema)
+3. [Gestión de Pedidos de Compra](#3-gestión-de-pedidos-de-compra)
+   - [3.1. Pedidos de Compra](#31-pedidos-de-compra)
+   - [3.2. Materiales Reservados](#32-materiales-reservados)
+   - [3.3. Artículos Importados](#33-artículos-importados)
+4. [Recepción de Materiales](#4-recepción-de-materiales)
+5. [Gestión de Almacenes y Movimientos](#5-gestión-de-almacenes-y-movimientos)
+   - [5.1. Almacenes Layout](#51-almacenes-layout)
+   - [5.2. Movimientos en Almacén](#52-movimientos-en-almacén)
+6. [Producción y enCONTROL](#6-producción-y-encontrol)
+   - [6.1. Producción](#61-producción)
+   - [6.2. enCONTROL](#62-encontrol)
+7. [Control de Stock y Reportes](#7-control-de-stock-y-reportes)
+8. [Resolución de Problemas Comunes](#8-resolución-de-problemas-comunes)
+9. [Conclusión](#9-conclusión) -->
+
+<hr />
+<h2 id="1-proposito">1. Propósito</h2>
+<p>El presente manual está diseñado para usuarios nuevos en el sistema de control de stock utilizado por los Clientes y Endades. El objetivo principal es proporcionar una guía detallada para la gestión eficiente de proyectos, desde la creación de pedidos hasta la optimización del proceso de producción. Este documento abarca los pasos necesarios para realizar las operaciones clave del sistema y está estructurado de forma secuencial para facilitar su comprensión.</p>
+<hr />
+<h2 id="2-acceso-al-sistema">2. Acceso al sistema</h2>
+<ul>
+<li>Inicie sesión con sus credenciales proporcionadas.</li>
+<li>Verifique que el sistema se encuentre en la versión actualizada.</li>
+<li>Acceda al menú principal para visualizar las opciones disponibles.</li>
+</ul>
+<hr />
+<h2 id="3-gestion-pedidos-de-compra">3. Gestión pedidos de compra</h2>
+<h3 id="31-pedidos-de-compra">3.1. Pedidos de compra</h3>
+<ul>
+<li>Desde el menú principal <strong>Compras</strong>, navegue a la sección "Pedidos de Compra".</li>
+<li>Especifique los materiales requeridos y su cantidad.</li>
+<li>En caso de cambios en las referencias, añádalas manualmente si están configuradas en la base de datos.</li>
+<li>En el pedido de venta (en la sección de <strong>Venta</strong>) selecciona el documento e ir a la pestaña <strong>Materiales</strong> para sacar el listado de los materiales del pedido.</li>
+<li>Puedes indicar si quieres o no comprar, por si ya tienes en almacén. Te mostrará para cada material la información: unidades en stock, unidades reservadas, unidades pendientes.</li>
+<li>Confirma en <strong>Pedir material</strong> y envía el pedido al proveedor correspondiente.</li>
+</ul>
+<p><img alt="material_necesario" src="../Imagenes/PR_Stock_Control/material_necesario.jpg" /></p>
+<blockquote>
+<p><strong>¡Importante!</strong> Para hacer el pedido de materiales en el documento de venta, se requieren permisos especiales para realizar compras. Este permiso también es necesario para fabricar o instalar.</p>
+</blockquote>
+<p><img alt="permiso_especiales" src="../Imagenes/PR_Stock_Control/permisos_especiales.jpg" /></p>
+<h3 id="32-materiales-reservados">3.2. Materiales reservados</h3>
+<ul>
+<li>Desde un documento de <strong>Ventas</strong>, <strong>Compras</strong> y en <strong>Proyectos</strong>, se pueden reservar materiales para el proyecto, indicando en <strong>Materiales reservados</strong> desde el desplegable de <strong>Almacén</strong>.</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado.jpg" /></p>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_2.jpg" /></p>
+<ul>
+<li>En <strong>Compras</strong> hay una opción más en el desplegable de almacén llamada <strong>Reposición de stock</strong>.</li>
+</ul>
+<p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock.jpg" /></p>
+<h3 id="33-articulos">3.3. Artículos</h3>
+<ul>
+<li>En el pedido de compras, en la pestaña <strong>Detalle</strong> en la cinta lateral derecha, verás que hay una sección ubicada en la parte inferior llamada <strong>Artículos</strong> y <strong>Artículos importados</strong>.</li>
+<li><strong>Artículos</strong>: Son materiales propios creados desde en <strong>MATERIAL</strong>.</li>
+</ul>
+<p><img alt="articulos" src="../Imagenes/PR_Stock_Control/articulos.jpg" /></p>
+<ul>
+<li><strong>Artículos importados</strong>: Son los materiales importados de los proyectos de <strong>Logikal</strong>. Son los mismos materiales que están también en Almacén <strong>Materiales importados</strong>.</li>
+</ul>
+<p><img alt="articulos_importados" src="../Imagenes/PR_Stock_Control/articulos_importados.jpg" /></p>
+<hr />
+<h2 id="4-recepcion-de-materiales-ensite">4. Recepción de materiales enSITE</h2>
+<ul>
+<li>En <strong>Almacenes</strong>, acceda a la opción <strong>"Pendientes de Recibir"</strong>. Se abrirá una pestaña con todos los materiales pendientes de recibir para cada proyecto.</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir.jpg" />
+<img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir2.jpg" /></p>
+<ul>
+<li><strong>Modo de recibir</strong>: Se puede hacer desde ENBLAU, pero se recomienda hacerlo desde la app <strong>enSite</strong> en taller.</li>
+<li>Abra <strong>enSite</strong> desde el taller a través de Wi-Fi con la persona encargada de recibir el pedido.</li>
+<li>En <strong>Recepción de pedidos</strong>, localice el pedido correspondiente (ordenado por fecha).</li>
+</ul>
+<p><img alt="recepcion_pedido" src="../Imagenes/PR_Stock_Control/recepcion_pedido.jpg" />
+<img alt="recepcion_pedido" src="../Imagenes/PR_Stock_Control/recepcion_pedido2.jpg" /></p>
+<ul>
+<li>Registre la recepción en <strong>Nuevo Albarán</strong> creando un albarán desde la sección <strong>Almacén</strong>.</li>
+</ul>
+<p><img alt="albaran" src="../Imagenes/PR_Stock_Control/albaran.jpg" />
+<img alt="albaran" src="../Imagenes/PR_Stock_Control/albaran2.jpg" /></p>
+<ul>
+<li>En ENBLAU, la pestaña <strong>Pendiente de recibir</strong> de <strong>Almacenes</strong> se sincroniza y ya no verás los materiales para ese pedido.</li>
+<li>En <strong>Pedido de Compras</strong>, puedes comprobar la trazabilidad.</li>
+<li>En <strong>enSite</strong>, indique las cantidades recibidas y la ubicación donde se almacenarán (Almacén, Planta, Zona, Subzona…). Luego podrás ver la ubicación de cada material.</li>
+</ul>
+<p><img alt="ubicacion" src="../Imagenes/PR_Stock_Control/ubicacion.jpg" />
+<img alt="ubicacion" src="../Imagenes/PR_Stock_Control/ubicacion2.jpg" /></p>
+<blockquote>
+<p><strong>En caso de materiales dañados u otras incidencias</strong>, puedes adjuntar documentos o capturar fotografías y adjuntarlas al albarán. Luego se podrá revisar desde ENBLAU.</p>
+</blockquote>
+<p><img alt="adjuntos" src="../Imagenes/PR_Stock_Control/adjuntos.jpg" />
+<img alt="adjuntos" src="../Imagenes/PR_Stock_Control/adjuntos2.jpg" /></p>
+<hr />
+<h2 id="5-gestion-de-almacenes-y-movimientos">5. Gestión de almacenes y movimientos</h2>
+<h3 id="51-almacenes-layout">5.1. Almacenes Layout</h3>
+<ul>
+<li>En el menú principal de <strong>Almacenes</strong>, puedes añadir o editar los almacenes.</li>
+</ul>
+<p><img alt="almacenes" src="../Imagenes/PR_Stock_Control/almacen.jpg" /></p>
+<ul>
+<li>Configura el layout del almacén desde la página inicial: <strong>ENBLAU</strong> – <strong>Configuración</strong> – <strong>Almacén</strong> – <strong>Layout</strong>:</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout.jpg" /></p>
+<ul>
+<li>Crea zonas, estanterías y posiciones en el sistema para una organización clara. Se mostrará como vista de árbol.</li>
+<li>
+<p>Relaciona cada posición con su correspondiente área de almacenamiento. Ejemplo:</p>
+<ul>
+<li><strong>Añadir Planta</strong>: Añade una planta y puedes indicar el almacén.</li>
+<li><strong>Añadir Zona/SubZona</strong>: Se añade una zona o subzona debajo de la ubicación seleccionada.</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout2.jpg" /></p>
+</li>
+</ul>
+<h3 id="52-movimientos-en-almacen">5.2. Movimientos en almacén</h3>
+<ul>
+<li>Realiza movimientos de materiales entre zonas:</li>
+<li>En <strong>Almacenes</strong> – <strong>Detallado</strong>, haz clic derecho sobre el material que quieras traspasar o descontar.</li>
+</ul>
+<p><img alt="detallado" src="../Imagenes/PR_Stock_Control/detallado.jpg" /></p>
+<ul>
+<li>Selecciona el material desde el proyecto.</li>
+<li>
+<p><strong>Descontar</strong>: Indica el Proyecto, número del pedido, responsable y cantidad/longitud.</p>
+<p><img alt="movimiento" src="../Imagenes/PR_Stock_Control/movimiento.jpg" /></p>
+</li>
+<li>
+<p><strong>Traspaso</strong>: Indica la ubicación de origen y destino.</p>
+<p><img alt="traspaso" src="../Imagenes/PR_Stock_Control/traspaso.jpg" /></p>
+</li>
+<li>
+<p>Los movimientos de entrada y salida de cada material se reflejarán en el <strong>Albarán</strong>. Se puede ver las entradas y salidas en <strong>Almacén – Movimientos</strong>.</p>
+<p><img alt="movimentos_almacen" src="../Imagenes/PR_Stock_Control/movimentos_almacen.jpg" /></p>
+</li>
+<li>
+<p>Desde la app <strong>enSITE</strong>, también se puede buscar por artículos y ver todas las ubicaciones donde está ese artículo. Para luego mover o descontar los articulos.</p>
+<p><img alt="ver_ubicacion" src="../Imagenes/PR_Stock_Control/ver_ubicacion.jpg" />
+<img alt="mover_salida" src="../Imagenes/PR_Stock_Control/mover_salida.jpg" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="6-produccion-y-encontrol">6. Producción y enCONTROL</h2>
+<h3 id="61-produccion">6.1. Producción</h3>
+<ul>
+<li>Crea proyectos de producción basados en los pedidos de cliente.</li>
+<li>
+<p>Crear producción.</p>
+<p><img alt="crear_produccion" src="../Imagenes/PR_Stock_Control/crear_produccion.jpg" /></p>
+</li>
+<li>
+<p>El siguiente paso es <strong>Enviar a producción</strong>.</p>
+<p><img alt="enviar_produccion" src="../Imagenes/PR_Stock_Control/enviar_produccion.jpg" /></p>
+</li>
+<li>
+<p>En producción, se puede ver en <strong>stock necesario</strong> los materiales descontados. Se puede descontar manualmente.</p>
+<p><img alt="stock_necesario" src="../Imagenes/PR_Stock_Control/stock_necesario.jpg" />
+<img alt="stock_necesario" src="../Imagenes/PR_Stock_Control/stock_necesario2.jpg" /></p>
+</li>
+</ul>
+<h3 id="62-encontrol">6.2. enCONTROL</h3>
+<ul>
+<li>Abre <strong>enCONTROL</strong>. Aparecen los proyectos de producción. Si eres usuario administrador, verás todos los proyectos, si no, solo verás los asignados.</li>
+<li>
+<p>Abre el <strong>monitor de control</strong>. Puedes abrirlo haciendo doble clic en cualquiera de los filtros (en la cabecera) o haciendo doble clic en el proyecto y seleccionando el puesto de <strong>Control</strong>.</p>
+<p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
+</li>
+<li>
+<p>Cuando se envía a producción (Taller), se coloca en cola de producción en la pestaña de <strong>Gestión de Producción</strong>. El responsable de producción decide la prioridad.</p>
+<p><img alt="gestion_produccion" src="../Imagenes/PR_Stock_Control/gestion_produccion.jpg" /></p>
+</li>
+<li>
+<p>Para añadir, solo tienes que arrastrarlo y se abrirá una ventana de <strong>Tarea</strong> para proponer una fecha.</p>
+<p><img alt="tarea" src="../Imagenes/PR_Stock_Control/tarea.jpg" /></p>
+</li>
+<li>
+<p>En la pestaña Planificación de producción defines a quien se asigna, arrastrando los proyectos a cada responsable por hacer. Hay que seleccionar el responsable y arrastrar el proyecto (se puede seleccionar más de uno responsable con ctrl + botón derecho). También se puede cambiar la prioridad  de izquierda a derecha y de arriba a abajo:</p>
+</li>
+</ul>
+<p><img alt="planificacion_produccion" src="../Imagenes/PR_Stock_Control/planificacion_produccion.jpg" /></p>
+<ul>
+<li>En la pestaña Calendario de producción en base a los tiempos de Logikal (en el ejemplo) fechas de entrada y salida de producción.</li>
+</ul>
+<p><img alt="calendario_produccion" src="../Imagenes/PR_Stock_Control/calendario_produccion.jpg" /></p>
+<ul>
+<li>Optimice los procesos según las áreas de producción (corte, mecanizado, ensamblado, etc.). En la pantalla de proyecto con doble clic sobre el proyecto deseado, te abrirá una ventana Seleccione un puesto. (Los puestos se definen como el cliente decida y se verá según el usuario) ejemplos:</li>
+</ul>
+<p><img alt="seleccion_puesto" src="../Imagenes/PR_Stock_Control/seleccion_puesto.jpg" /></p>
+<ul>
+<li>
+<p>Preparación de Material</p>
+<ul>
+<li>Todo preparado – Marca los materiales con un check en verde indicando que está preparado.</li>
+<li>Nada Preparado – Marca los materiales con una X en rojo indicando que no está preparado.</li>
+<li>Ubicación Material – Según lo tengas configurado enCONTROL, se podría indicar donde ubicar los materiales. Para que se descuente ese material solo de esa ubicación. </li>
+<li>Finalizar - seria la fecha real.</li>
+<li>Documentación - añadir una ruta genérica para añadir lo que quiera. Catálogo, manuales, etc...</li>
+<li>Comentarios - Se puede añadir comentario y escoger una severidad en el desplegable. El ultimo comentario bueno es el que desbloquea.</li>
+</ul>
+<p><img alt="preparacion" src="../Imagenes/PR_Stock_Control/preparacion.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p>Todas las pantallas de Puesto son muy similares. Solo que algunas puede que se descuente materiales y otras es a nivel de información. </p>
+</blockquote>
+<ul>
+<li>Corte<ul>
+<li>En corte se indica la longitud de la barra y el desperdicio de retales. Se abre una ventana de retales y puede cambiar la longitud según se necesario.</li>
+<li>Luego en ENBLAU Movimientos de almacén se reflejará una salida de la barra total ej. 6500 y luego una entrado de la del mismo material de ej. 5500 según había indicado en el puesto de corte.</li>
+</ul>
+</li>
+<li>Mecanizado<ul>
+<li>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo reales.</li>
+</ul>
+</li>
+<li>Montaje<ul>
+<li>Se descuenta materiales (accesorios) por cuadro.</li>
+</ul>
+</li>
+<li>Ajunquillado<ul>
+<li>Se descuenta materiales (Juntas) por cuadro.</li>
+</ul>
+</li>
+<li>Ensamblado<ul>
+<li>Información del cuadro, pero no se descuenta materiales.</li>
+</ul>
+</li>
+<li>Herraje<ul>
+<li>Se descuenta materiales (herraje) por hoja.</li>
+</ul>
+</li>
+<li>Comprobación final<ul>
+<li>No se descuenta materiales.</li>
+</ul>
+</li>
+<li>Pizarra<ul>
+<li>Muestra la evolución de cada proyecto y su estado.</li>
+</ul>
+</li>
+<li>
+<p>Control</p>
+<ul>
+<li>Abre el monitor Control de proyectos</li>
+</ul>
+</li>
+<li>
+<p>Asigne prioridades y recursos para asegurar la fluidez en la producción.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Configuración enCONTROL</strong> (Usuario Adm) - Define algunas configuraciones por defecto y se asigna nuevos Puestos:</p>
+</blockquote>
+<p><img alt="config_encontrol" src="../Imagenes/PR_Stock_Control/config_encontrol.jpg" />
+  <img alt="config_encontrol" src="../Imagenes/PR_Stock_Control/config_encontrol2.jpg" /></p>
+<ul>
+<li>
+<p>En Varios Hay diferentes modos para descontar los materiales (Perfiles, Herrajes y Accesorios).</p>
+<p><img alt="varios" src="../Imagenes/PR_Stock_Control/varios.jpg" /></p>
+<ul>
+<li><strong>No descontar</strong>: No se descuenta de ningún sitio.</li>
+<li><strong>Descontar del proyecto</strong>: Se descuenta solo del proyecto. Independiente de la zona.</li>
+<li><strong>Descontar de la zona, en su defecto del proyecto</strong>: Se descuenta de la zona indicada y del proyecto.</li>
+<li><strong>Descontar de la zona</strong>: Solo se descuenta de la Zona indicada. Independiente del proyecto.</li>
+<li><strong>Descontar del proyecto, en su defecto de cualquier zona</strong>: Se descuenta del proyecto y de cualquier zona que tenga ese material.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="7-control-de-stock-y-reportes">7. Control de stock y reportes</h2>
+<ul>
+<li>Monitorea el stock necesario desde la sección "Producción".</li>
+<li>Identifica materiales reservados y pendientes en tiempo real.</li>
+<li>Genera reportes de inventarios para evaluar el uso de materiales y planificar futuras compras.</li>
+</ul>
+<hr />
+<h2 id="8-resolucion-de-problemas-omunes">8. Resolución de problemas omunes</h2>
+<ul>
+<li><strong>Error al importar referencias</strong>: Verifica que las referencias estén configuradas en la base de datos.</li>
+<li><strong>Materiales sobrantes o faltantes</strong>: Asegúrate de registrar correctamente las ubicaciones y cantidades al recibir materiales.</li>
+<li><strong>Problemas con el layout del almacén</strong>: Revisa la configuración de zonas y ajusta según sea necesario.</li>
+</ul>
+<hr />
+<h2 id="9-conclusion">9. Conclusión</h2>
+<p>Este manual ofrece una guía paso a paso para los procesos principales en el sistema de control de stock. Siguiendo estas instrucciones, los usuarios podrán gestionar eficientemente los inventarios, mejorar la producción y optimizar la relación con proveedores. Para soporte adicional, contacte al administrador del sistema.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2.PR_Facturas/" class="btn btn-neutral float-left" title="2. Facturación"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4.PR_Proyecto_cliente/" class="btn btn-neutral float-right" title="4. Proyectos, Clientes y Proveedores">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/mvrodgers/manual-de-usuario" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../2.PR_Facturas/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4.PR_Proyecto_cliente/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
