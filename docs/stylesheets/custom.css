@@ -1,0 +1,58 @@
+
+/* Mantener el color de la sección superior (Documentos y Search docs) */
+.wy-side-nav-search {
+    background-color: #0098da; /* Color original del tema readthedocs */
+}
+
+/* Cambiar el color de fondo de la cinta lateral */
+.wy-nav-side {
+    background-color: #FFFFFF; /* Cambia este valor al color que desees */
+}
+
+/* Cambiar el color del texto en la cinta lateral */
+.wy-menu-vertical a {
+    color: #000000; /* Cambia este valor al color que desees */
+}
+
+/* Cambiar el color de fondo de los elementos activos o al pasar el ratón */
+.wy-menu-vertical a:hover, .wy-menu-vertical li.current a {
+    background-color: #ffffffb9; /* Cambia este valor al color que desees */
+}
+
+/* Cambiar el color de las letras al pasar el ratón */
+.wy-menu-vertical li.toctree-l1 > a:hover,
+.wy-menu-vertical li.toctree-l2 > a:hover,
+.wy-menu-vertical li.toctree-l3 > a:hover {
+    color: #0098da; 
+}
+
+
+/* Hacer que el contenido ocupe toda la pantalla */
+.wy-nav-content {
+    max-width: none !important;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+
+/* Cambiar el color del botón "Next" en la barra lateral inferior (NO ESTA CAMBIANDO)*/
+.md-footer__inner a.md-footer__link {
+    background-color: #007acc !important; /* Color de fondo */
+    color: white !important; /* Color del texto */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Ocultar el pie de página "Built with MkDocs..." */
+.rst-other-versions {
+    display: none;
+}
+
+.injected {
+    display: none;
+}
